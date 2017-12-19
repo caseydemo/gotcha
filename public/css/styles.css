@@ -1,0 +1,33 @@
+body{
+	background-color: #000;
+	margin:0px;
+	padding:0px;
+}
+@font-face { 
+	font-family: Slayer; 
+	src: url('/fonts/Slaytanic.ttf'); 
+} 
+.slayer-font{
+	font-family: Slayer, sans-serif;
+	font-size: 550px;
+	font-weight: bolder;
+	margin-top: 0px;
+	height: 600px;
+}
+nav.navbar.navbar-default.navbar-static-top{
+	margin-bottom: 0px;
+}
+.gotcha-title-div{
+	text-align: center;
+	height: 800px;
+	width: 100%;
+}
+.progress{
+	font-size: 50px;
+}
+#countmesg{
+	font-size: 100px;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+}
