@@ -10,7 +10,7 @@
 <body>
     <div class="gotcha-title-div">
     	<div id="countmesg"></div>
-        <div class="slayer-font" style="margin-top: -75px; margin-bottom: -50px;">
+        <div class="slayer-font-title" style="margin-top: -75px; margin-bottom: -50px;">
             GOTCHA
         </div>
         <!-- <progress value="0" max="5" id="progressBar"></progress> -->

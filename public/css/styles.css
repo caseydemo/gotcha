@@ -7,12 +7,18 @@ body{
 	font-family: Slayer; 
 	src: url('/fonts/Slaytanic.ttf'); 
 } 
-.slayer-font{
+.slayer-font-title{
 	font-family: Slayer, sans-serif;
 	font-size: 550px;
 	font-weight: bolder;
 	margin-top: 0px;
 	height: 600px;
+}
+.slayer-font{
+	font-family: Slayer, sans-serif;
+	font-size: 150px;
+	font-weight: bolder;
+	margin-top: 0px;
 }
 nav.navbar.navbar-default.navbar-static-top{
 	margin-bottom: 0px;
@@ -30,4 +36,19 @@ nav.navbar.navbar-default.navbar-static-top{
 	font-weight: bolder;
 	color: white;
 	text-align: center;
+}
+.embeded-video{
+	display: block;
+	margin:auto;
+}
+.embed-frame{
+	text-align: center;
+}
+.title-div{
+	text-align: center;
+}
+.table{
+	width: 50%;
+	margin: auto;
+	font-size: 30px;
 }
