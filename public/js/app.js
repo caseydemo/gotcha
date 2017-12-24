@@ -42894,10 +42894,64 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
         console.log('Component mounted.');
+    },
+
+
+    methods: {
+
+        toggleDates: function toggleDates() {
+            this.showDates = true;
+            this.showMerch = false;
+            this.showPictures = false;
+        },
+        togglePictures: function togglePictures() {
+            this.showPictures = true;
+            this.showDates = false;
+            this.showMerch = false;
+        },
+        toggleMerch: function toggleMerch() {
+            this.showMerch = true;
+            this.showDates = false;
+            this.showPictures = false;
+        }
+    },
+    data: function data() {
+        return {
+            showDates: false,
+            showPictures: false,
+            showMerch: false
+        };
     }
 });
 
@@ -42909,32 +42963,172 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [
-              _vm._v("Example Component")
-            ]),
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+        _c(
+          "div",
+          {
+            staticClass: "btn-group",
+            attrs: { role: "group", "aria-label": "Basic example" }
+          },
+          [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-secondary",
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    _vm.toggleDates()
+                  }
+                }
+              },
+              [_vm._v("Upcoming Dates")]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                    I'm an example component!\n                "
-              )
-            ])
-          ])
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-secondary",
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    _vm.togglePictures()
+                  }
+                }
+              },
+              [_vm._v("Show Pictures")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-secondary",
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    _vm.toggleMerch()
+                  }
+                }
+              },
+              [_vm._v("Merch")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "panel-body" }, [
+          _c(
+            "ul",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showDates,
+                  expression: "showDates"
+                }
+              ],
+              staticClass: "list-group"
+            },
+            [
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Upcoming Dates")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Dapibus ac facilisis in")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Morbi leo risus")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Porta ac consectetur ac")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Vestibulum at eros")
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "ul",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showPictures,
+                  expression: "showPictures"
+                }
+              ],
+              staticClass: "list-group"
+            },
+            [
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Pictures")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Dapibus ac facilisis in")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Morbi leo risus")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Porta ac consectetur ac")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Vestibulum at eros")
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "ul",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showMerch,
+                  expression: "showMerch"
+                }
+              ],
+              staticClass: "list-group"
+            },
+            [
+              _c("li", { staticClass: "list-group-item" }, [_vm._v("Merch")]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Dapibus ac facilisis in")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Morbi leo risus")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Porta ac consectetur ac")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _vm._v("Vestibulum at eros")
+              ])
+            ]
+          )
         ])
       ])
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
