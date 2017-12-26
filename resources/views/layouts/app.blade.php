@@ -45,17 +45,25 @@
     </ul>
 
     <ul class="navbar-nav navbar-right">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Photos</a>
+      <li class="nav-item nav-icon">
+        <a target="_blank" href="https://www.facebook.com/gotcharockband/">
+            <i class="hvr-grow navbar-icon fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Videos</a>
+      <li class="nav-item nav-icon">
+        <a target="_blank" class="nav-link" href="https://www.instagram.com/gotchabandrocks/?hl=en">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Audio</a>
+      <li class="nav-item nav-icon">
+        <a class="nav-link" href="https://www.reverbnation.com/gotcha5">
+            <img src="{{ asset('reverbnation.png') }}" />
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Merch</a>
+      <li class="nav-item nav-icon">
+        <a class="nav-link" href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
       </li>
     </ul>
    
