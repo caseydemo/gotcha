@@ -60,6 +60,16 @@ nav.navbar.navbar-default.navbar-static-top{
 	color: white;
 }
 .nav-icon{
-	width: 35px;
+	padding:0px;
+	width: 45px;
 	height: 35px;
+	margin-left: auto;
+	margin-right: 5px;
+}
+.navbar-right{
+	width: 250px;
+	margin-right: 10px;
+}
+.reverb-star{
+	margin-right: 50px;
 }

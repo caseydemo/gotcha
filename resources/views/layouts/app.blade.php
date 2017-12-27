@@ -46,23 +46,23 @@
 
     <ul class="navbar-nav navbar-right">
       <li class="nav-item nav-icon">
-        <a target="_blank" href="https://www.facebook.com/gotcharockband/">
-            <i class="hvr-grow navbar-icon fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+        <a target="_blank" class="nav-link" href="https://www.reverbnation.com/gotcha5">
+          <i class="reverb-star hvr-grow fa fa-3x fa-star" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a target="_blank" style="margin-left:10px;" class="nav-link" href="https://www.facebook.com/gotcharockband/">
+            <i class="hvr-grow nav-icon fa fa-3x fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
       <li class="nav-item nav-icon">
         <a target="_blank" class="nav-link" href="https://www.instagram.com/gotchabandrocks/?hl=en">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="hvr-grow nav-icon fa fa-3x fa-instagram" aria-hidden="true"></i>
         </a>
       </li>
       <li class="nav-item nav-icon">
-        <a class="nav-link" href="https://www.reverbnation.com/gotcha5">
-            <img src="{{ asset('reverbnation.png') }}" />
-        </a>
-      </li>
-      <li class="nav-item nav-icon">
-        <a class="nav-link" href="#">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
+        <a target="_blank" class="nav-link" href="#">
+            <i class="hvr-grow nav-icon fa fa-3x fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
