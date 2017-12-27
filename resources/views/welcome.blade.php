@@ -10,9 +10,10 @@
 <body>
     <div class="gotcha-title-div">
     	<div id="countmesg"></div>
-        <div class="slayer-font-title" style="margin-top: -75px; margin-bottom: -50px;">
+       <!--  <div class="slayer-font-title" style="margin-top: -75px; margin-bottom: -50px;">
             GOTCHA
-        </div>
+        </div> -->
+        <img src="{{ asset('logo-lg.png') }}" />
         <!-- <progress value="0" max="5" id="progressBar"></progress> -->
     </div>
     <script src="{{ asset('js/timer.js') }}"></script></script>
