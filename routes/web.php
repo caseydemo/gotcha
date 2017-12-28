@@ -14,4 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/pictures', function(){
+	return view('pictures');
+});
+
 Route::resource('/home' , 'GotchaController');

@@ -74,3 +74,7 @@ nav.navbar.navbar-default.navbar-static-top{
 .reverb-star{
 	margin-right: 50px;
 }
+.col{
+	border-style: solid;
+	border-color: white;
+}
