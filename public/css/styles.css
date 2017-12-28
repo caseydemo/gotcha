@@ -75,6 +75,5 @@ nav.navbar.navbar-default.navbar-static-top{
 	margin-right: 50px;
 }
 .col{
-	border-style: solid;
-	border-color: white;
+	margin:auto;
 }
