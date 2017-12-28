@@ -42802,7 +42802,7 @@ exports = module.exports = __webpack_require__(41)(undefined);
 
 
 // module
-exports.push([module.i, "\n.thumbnails[data-v-650f2efa]{\n  width: 100%;\n  height: auto;\n}\n", ""]);
+exports.push([module.i, "\n.thumbnails[data-v-650f2efa]{\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -43320,6 +43320,63 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -43343,6 +43400,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.showMerch = true;
             this.showDates = false;
             this.showPictures = false;
+        },
+        modalCall: function modalCall(thing) {
+            console.log(thing);
+            this.modal_img = thing;
+            console.log(this.modal_img);
+            this.modal_img = this.modal_img;
         }
     },
     data: function data() {
@@ -43350,6 +43413,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             showDates: false,
             showPictures: false,
             showMerch: false,
+
+            modal_img: '',
+
             img1: "/images/studio/CaseyStudio1.jpg",
             img2: "/images/studio/CaseyStudio2.jpg",
             img3: "images/studio/CaseyStudio3.jpg",
@@ -43382,78 +43448,386 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "imgModal",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "imgModalTitle",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("img", { attrs: { src: _vm.modal_img } })
+              ]),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img1 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img1)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img1 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img2 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img2)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img2 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img3 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img3)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img3 }
+            })
+          ]
+        )
       ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img4 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img4)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img4 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img5 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img5)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img5 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img6 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img6)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img6 }
+            })
+          ]
+        )
       ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img7 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img7)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img7 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img8 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img8)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img8 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img9 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img9)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img9 }
+            })
+          ]
+        )
       ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img10 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img10)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img10 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img11 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img11)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img11 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img12 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img12)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img12 }
+            })
+          ]
+        )
       ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img13 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img13)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img13 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img14 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img14)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img14 }
+            })
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("img", { staticClass: "thumbnails", attrs: { src: _vm.img15 } })
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img15)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal thumbnails",
+              attrs: { src: _vm.img15 }
+            })
+          ]
+        )
       ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c(
+        "h5",
+        { staticClass: "modal-title", attrs: { id: "exampleModalLongTitle" } },
+        [_vm._v("Modal title")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: { "data-dismiss": "modal", "aria-label": "Close" }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-secondary",
+          attrs: { "data-dismiss": "modal" }
+        },
+        [_vm._v("Close")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

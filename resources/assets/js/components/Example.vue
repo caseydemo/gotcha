@@ -1,59 +1,116 @@
 <template>
   <div class="container">
-  
+
+
+<!-- Modal -->
+<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img :src="modal_img" />
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ROW -->
   <div class="row">
     <div class="col">
-      <img class="thumbnails" :src="img1" >
+      <a v-on:click="modalCall(img1)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img1" >
+      </a>
     </div>
     <div class="col">
-      <img class="thumbnails" :src="img2" >
+      <a v-on:click="modalCall(img2)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img2" >
+      </a>
     </div>
     <div class="col">
-      <img class="thumbnails" :src="img3" >
+      <a v-on:click="modalCall(img3)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img3" >
+      </a>
+    </div>
+  </div>
+
+  <!-- ROW -->
+  <div class="row">
+    <div class="col">
+      <a v-on:click="modalCall(img4)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img4" >
+      </a>
+    </div>
+    <div class="col">
+      <a v-on:click="modalCall(img5)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img5" >
+      </a>
+    </div>
+    <div class="col">
+      <a v-on:click="modalCall(img6)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img6" >
+      </a>
+    </div>
+  </div>
+
+  <!-- ROW -->
+  <div class="row">
+    <div class="col">
+      <a v-on:click="modalCall(img7)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img7" >
+      </a>
+    </div>
+    <div class="col">
+      <a v-on:click="modalCall(img8)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img8" >
+      </a>
+    </div>
+    <div class="col">
+      <a v-on:click="modalCall(img9)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img9" >
+      </a>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <img class="thumbnails" :src="img4" >
+      <a v-on:click="modalCall(img10)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img10" >
+      </a>
     </div>
     <div class="col">
-      <img class="thumbnails" :src="img5" >
+      <a v-on:click="modalCall(img11)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img11" >
+      </a>
     </div>
     <div class="col">
-      <img class="thumbnails" :src="img6" >
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img class="thumbnails" :src="img7" >
-    </div>
-    <div class="col">
-      <img class="thumbnails" :src="img8" >
-    </div>
-    <div class="col">
-      <img class="thumbnails" :src="img9" >
+      <a v-on:click="modalCall(img12)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img12" >
+      </a>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <img class="thumbnails" :src="img10" >
+      <a v-on:click="modalCall(img13)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img13" >
+      </a>
     </div>
     <div class="col">
-      <img class="thumbnails" :src="img11" >
+      <a v-on:click="modalCall(img14)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img14" >
+      </a>
     </div>
     <div class="col">
-      <img class="thumbnails" :src="img12" >
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img class="thumbnails" :src="img13" >
-    </div>
-    <div class="col">
-      <img class="thumbnails" :src="img14" >
-    </div>
-    <div class="col">
-      <img class="thumbnails" :src="img15" >
+      <a v-on:click="modalCall(img15)" data-toggle="modal" data-target="#imgModal">
+        <img class="hvr-wobble-horizontal thumbnails" :src="img15" >
+      </a>
     </div>
   </div>
   </div>
@@ -83,6 +140,12 @@ methods: {
         this.showMerch = true;
         this.showDates = false;
         this.showPictures = false;    
+    },
+    modalCall: function(thing){
+        console.log(thing);
+        this.modal_img = thing;
+        console.log(this.modal_img);
+        this.modal_img=this.modal_img;       
     }
 },    
 data () {
@@ -90,6 +153,9 @@ data () {
         showDates: false,
         showPictures: false,
         showMerch: false,
+
+        modal_img: '',
+
         img1: "/images/studio/CaseyStudio1.jpg",
         img2: "/images/studio/CaseyStudio2.jpg",
         img3: "images/studio/CaseyStudio3.jpg",
@@ -117,5 +183,6 @@ data () {
 .thumbnails{
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 </style>
