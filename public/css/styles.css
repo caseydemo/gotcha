@@ -7,21 +7,10 @@ body{
 	font-family: Slayer; 
 	src: url('/fonts/Slaytanic.ttf'); 
 } 
-.slayer-font-title{
-	font-family: Slayer, sans-serif;
-	font-size: 550px;
-	font-weight: bolder;
-	margin-top: 0px;
-	height: 600px;
-}
-.slayer-font{
-	font-family: Slayer, sans-serif;
-	font-size: 150px;
-	font-weight: bolder;
-	margin-top: 0px;
-}
+
 nav.navbar.navbar-default.navbar-static-top{
 	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 .gotcha-title-div{
 	text-align: center;
@@ -40,11 +29,13 @@ nav.navbar.navbar-default.navbar-static-top{
 .embeded-video{
 	display: block;
 	margin:auto;
+	margin-top: 25px;
+	margin-bottom: 50px;
 }
 .embed-frame{
 	text-align: center;
-	margin-bottom: 50px;
-}
+/*	height: 50%;
+*/}
 .title-div{
 	text-align: center;
 }
@@ -54,11 +45,27 @@ nav.navbar.navbar-default.navbar-static-top{
 	font-size: 20px;
 }
 .nav-link{
-	font-size: 15px;
+	font-size: 25px;
+	color: #6E6E70;
+	font-family: 'Metal Mania', cursive;
+	font-weight: bold;
+}
+.home-title{
+	text-align: center;
+	font-size: 100px;
+	color: #6E6E70;
+	font-family: 'Metal Mania', cursive;
+	font-weight: bolder;
+}
+.nav-link-icon{
+	font-size:15px;
 	color: #6E6E70;
 }
 .nav-home{
 	color: white;
+	font-family: 'Metal Mania', cursive;
+	font-weight: bolder;
+	font-size: 30px;
 }
 .nav-icon{
 	padding:0px;
@@ -77,4 +84,18 @@ nav.navbar.navbar-default.navbar-static-top{
 .col{
 	margin:auto;
 	background-color: #000;
+}
+.container{
+	height: 100%;
+}
+#app{
+	height: 500px;
+	padding:0px;
+	margin:0px;
+}
+a:hover{
+	color:white;
+}
+nav.navbar-expand-lg.navbar-dark.bg-dark{
+	margin-bottom: 0px;
 }

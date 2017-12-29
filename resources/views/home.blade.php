@@ -11,8 +11,12 @@ Venue-Hunter
 		GOTCHA
 	</div> -->
 </div>
-<div class="embed-frame">
-	<iframe class="embeded-video" id="myVideo" width="800" height="400" src="https://www.youtube.com/embed/1Obuw1ahBrs?rel=0&amp;controls=0&autoplay=0" frameborder="0" gesture="media" volume="0" allow="encrypted-media" allowfullscreen></iframe>
+<div class="home-title">GOTCHA</div>
+<div style="text-align: center;" class="container">
+
+	<div class="embed-frame">
+		<iframe class="embeded-video" id="myVideo" width="800" height="400" src="https://www.youtube.com/embed/1Obuw1ahBrs?rel=0&amp;controls=0&autoplay=0" frameborder="0" gesture="media" volume="0" allow="encrypted-media" allowfullscreen></iframe>
+	</div>
 </div>
 
 <!-- <example></example>
