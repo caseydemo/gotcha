@@ -4,16 +4,18 @@
 
 <!-- Modal -->
 <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div style="margin:auto; margin-top:200px;" class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <!-- <h5 class="modal-title" id="exampleModalLongTitle">{{ modal_title }}</h5> -->
         <button class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img :src="modal_img" />
+        <div class="container">
+          <img class="modal-img" :src="modal_img" />
+        </div>
       </div>
       <div class="modal-footer">
         <button class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -69,7 +71,7 @@
       </a>
     </div>
     <div class="col">
-      <a v-on:click="modalCall(img8)" data-toggle="modal" data-target="#imgModal">
+      <a href="http://sneakattackrecording.com/" target="_blank">
         <img class="hvr-wobble-horizontal thumbnails" :src="img8" >
       </a>
     </div>
@@ -79,6 +81,8 @@
       </a>
     </div>
   </div>
+
+  <!-- ROW -->
   <div class="row">
     <div class="col">
       <a v-on:click="modalCall(img10)" data-toggle="modal" data-target="#imgModal">
@@ -96,6 +100,9 @@
       </a>
     </div>
   </div>
+
+
+  <!-- ROW -->
   <div class="row">
     <div class="col">
       <a v-on:click="modalCall(img13)" data-toggle="modal" data-target="#imgModal">
@@ -142,10 +149,12 @@ methods: {
         this.showPictures = false;    
     },
     modalCall: function(thing){
-        console.log(thing);
+      console.log(thing);
         this.modal_img = thing;
-        console.log(this.modal_img);
-        this.modal_img=this.modal_img;       
+        // console.log(this.modal_info[id]['image']);
+        // this.modal_img=this.modal_info[id]['image'];
+        // this.modal_title=this.modal_info[id]['title'];
+        // console.log(this.modal_info[0]['title']);
     }
 },    
 data () {
@@ -155,11 +164,27 @@ data () {
         showMerch: false,
 
         modal_img: '',
+        modal_title: '',
 
-        img1: "/images/studio/CaseyStudio1.jpg",
-        img2: "/images/studio/CaseyStudio2.jpg",
-        img3: "images/studio/CaseyStudio3.jpg",
-        
+        // modal_info: [
+        // {
+        //   image: '/images/studio/CaseyStudio1.jpg',
+        //   title: 'Casey in the Studio'
+        // },
+        // {
+        //   image: '/images/studio/CaseyStudio2.jpg',
+        //   title: 'Casey in the Studio'
+        // },
+        // {
+        //   image: '/images/studio/CaseyStudio3.jpg',
+        //   title: 'Casey in the Studio'
+        // },
+        // ],
+
+        img1: "/images/studio/GroupPhoto1.jpg",
+        img2: "/images/studio/ShuffleWarehouse2.jpg",
+        img3: "images/studio/ShuffleWarehouse3.jpg",
+             
         img4: "/images/studio/GriffyStudio1.jpg",
         img5: "/images/studio/GriffyStudio2.jpg",
         img6: "images/studio/GriffyStudio3.jpg",
@@ -172,9 +197,9 @@ data () {
         img11: "/images/studio/PhilStudio2.jpg",
         img12: "images/studio/PhilStudio3.jpg",
 
-        img13: "/images/studio/ShuffleWarehouse2.jpg",
-        img14: "/images/studio/GroupPhoto1.jpg",
-        img15: "images/studio/ShuffleWarehouse3.jpg"
+        img13: "/images/studio/CaseyStudio1.jpg",
+        img14: "/images/studio/CaseyStudio2.jpg",
+        img15: "images/studio/CaseyStudio3.jpg"
     }
     }
 }
@@ -184,5 +209,15 @@ data () {
   width: 100%;
   height: auto;
   cursor: pointer;
+}
+.modal-img{
+  width: 100%;
+  margin:auto;
+}
+.modal-title{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 </style>

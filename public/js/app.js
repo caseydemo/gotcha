@@ -42802,7 +42802,7 @@ exports = module.exports = __webpack_require__(41)(undefined);
 
 
 // module
-exports.push([module.i, "\n.thumbnails[data-v-650f2efa]{\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.thumbnails[data-v-650f2efa]{\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n}\n.modal-img[data-v-650f2efa]{\n  width: 100%;\n  margin:auto;\n}\n.modal-title[data-v-650f2efa]{\n  width: 100%;\n  text-align: center;\n  font-size: 30px;\n  font-weight: bold;\n}\n", ""]);
 
 // exports
 
@@ -43377,6 +43377,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -43404,8 +43411,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         modalCall: function modalCall(thing) {
             console.log(thing);
             this.modal_img = thing;
-            console.log(this.modal_img);
-            this.modal_img = this.modal_img;
+            // console.log(this.modal_info[id]['image']);
+            // this.modal_img=this.modal_info[id]['image'];
+            // this.modal_title=this.modal_info[id]['title'];
+            // console.log(this.modal_info[0]['title']);
         }
     },
     data: function data() {
@@ -43415,10 +43424,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             showMerch: false,
 
             modal_img: '',
+            modal_title: '',
 
-            img1: "/images/studio/CaseyStudio1.jpg",
-            img2: "/images/studio/CaseyStudio2.jpg",
-            img3: "images/studio/CaseyStudio3.jpg",
+            // modal_info: [
+            // {
+            //   image: '/images/studio/CaseyStudio1.jpg',
+            //   title: 'Casey in the Studio'
+            // },
+            // {
+            //   image: '/images/studio/CaseyStudio2.jpg',
+            //   title: 'Casey in the Studio'
+            // },
+            // {
+            //   image: '/images/studio/CaseyStudio3.jpg',
+            //   title: 'Casey in the Studio'
+            // },
+            // ],
+
+            img1: "/images/studio/GroupPhoto1.jpg",
+            img2: "/images/studio/ShuffleWarehouse2.jpg",
+            img3: "images/studio/ShuffleWarehouse3.jpg",
 
             img4: "/images/studio/GriffyStudio1.jpg",
             img5: "/images/studio/GriffyStudio2.jpg",
@@ -43432,9 +43457,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             img11: "/images/studio/PhilStudio2.jpg",
             img12: "images/studio/PhilStudio3.jpg",
 
-            img13: "/images/studio/ShuffleWarehouse2.jpg",
-            img14: "/images/studio/GroupPhoto1.jpg",
-            img15: "images/studio/ShuffleWarehouse3.jpg"
+            img13: "/images/studio/CaseyStudio1.jpg",
+            img14: "/images/studio/CaseyStudio2.jpg",
+            img15: "images/studio/CaseyStudio3.jpg"
         };
     }
 });
@@ -43463,13 +43488,22 @@ var render = function() {
       [
         _c(
           "div",
-          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          {
+            staticClass: "modal-dialog modal-lg",
+            staticStyle: { margin: "auto", "margin-top": "200px" },
+            attrs: { role: "document" }
+          },
           [
             _c("div", { staticClass: "modal-content" }, [
               _vm._m(0),
               _vm._v(" "),
               _c("div", { staticClass: "modal-body" }, [
-                _c("img", { attrs: { src: _vm.modal_img } })
+                _c("div", { staticClass: "container" }, [
+                  _c("img", {
+                    staticClass: "modal-img",
+                    attrs: { src: _vm.modal_img }
+                  })
+                ])
               ]),
               _vm._v(" "),
               _vm._m(1)
@@ -43628,11 +43662,9 @@ var render = function() {
         _c(
           "a",
           {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img8)
-              }
+            attrs: {
+              href: "http://sneakattackrecording.com/",
+              target: "_blank"
             }
           },
           [
@@ -43796,12 +43828,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "modal-header" }, [
-      _c(
-        "h5",
-        { staticClass: "modal-title", attrs: { id: "exampleModalLongTitle" } },
-        [_vm._v("Modal title")]
-      ),
-      _vm._v(" "),
       _c(
         "button",
         {

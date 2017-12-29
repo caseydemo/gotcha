@@ -31,7 +31,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Photos</a>
+        <a class="nav-link" href="/pictures">Photos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Videos</a>
@@ -61,7 +61,7 @@
         </a>
       </li>
       <li class="nav-item nav-icon">
-        <a target="_blank" class="nav-link" href="#">
+        <a target="_blank" class="nav-link" href="https://twitter.com/Gotchametalex">
             <i class="hvr-grow nav-icon fa fa-3x fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
