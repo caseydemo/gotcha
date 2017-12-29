@@ -42802,7 +42802,7 @@ exports = module.exports = __webpack_require__(41)(undefined);
 
 
 // module
-exports.push([module.i, "\n.thumbnails[data-v-650f2efa]{\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n}\n.modal-img[data-v-650f2efa]{\n  width: 100%;\n  margin:auto;\n}\n.modal-title[data-v-650f2efa]{\n  width: 100%;\n  text-align: center;\n  font-size: 30px;\n  font-weight: bold;\n}\n", ""]);
+exports.push([module.i, "\n.thumbnails[data-v-650f2efa]{\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n}\n.show-thumbnails[data-v-650f2efa]{\n    cursor: pointer;\n    height: auto; \n    width: auto; \n    max-width: 300px; \n    max-height: 300px;\n    padding-bottom: 10px;\n}\n.col[data-v-650f2efa]{\n  margin:auto;\n  text-align: center;\n}\n.modal-img[data-v-650f2efa]{\n  width: 100%;\n  margin:auto;\n}\n.modal-title[data-v-650f2efa]{\n  width: 100%;\n  text-align: center;\n  font-size: 30px;\n  font-weight: bold;\n}\n", ""]);
 
 // exports
 
@@ -43384,6 +43384,134 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -43393,20 +43521,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
 
-        toggleDates: function toggleDates() {
-            this.showDates = true;
-            this.showMerch = false;
-            this.showPictures = false;
+        toggleStudioPictures: function toggleStudioPictures() {
+            this.showStudioPics = true, this.showShowPics = false, this.showMiscPics = false;
         },
-        togglePictures: function togglePictures() {
-            this.showPictures = true;
-            this.showDates = false;
-            this.showMerch = false;
+        toggleShowPictures: function toggleShowPictures() {
+            this.showStudioPics = false, this.showShowPics = true, this.showMiscPics = false;
         },
-        toggleMerch: function toggleMerch() {
-            this.showMerch = true;
-            this.showDates = false;
-            this.showPictures = false;
+        toggleMiscPictures: function toggleMiscPictures() {
+            this.showStudioPics = false, this.showShowPics = false, this.showMiscPics = true;
         },
         modalCall: function modalCall(thing) {
             console.log(thing);
@@ -43419,9 +43541,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-            showDates: false,
-            showPictures: false,
-            showMerch: false,
+            showStudioPics: true,
+            showShowPics: false,
+            showMiscPics: false,
 
             modal_img: '',
             modal_title: '',
@@ -43441,6 +43563,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             // },
             // ],
 
+            // STUDIO PICS
             img1: "/images/studio/GroupPhoto1.jpg",
             img2: "/images/studio/ShuffleWarehouse2.jpg",
             img3: "images/studio/ShuffleWarehouse3.jpg",
@@ -43459,7 +43582,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             img13: "/images/studio/CaseyStudio1.jpg",
             img14: "/images/studio/CaseyStudio2.jpg",
-            img15: "images/studio/CaseyStudio3.jpg"
+            img15: "images/studio/CaseyStudio3.jpg",
+
+            // SHOW PICS
+            img16: "/images/shows/EleventhFrame2.jpg",
+            img17: "/images/shows/Mike1.jpg",
+            img18: "images/shows/EleventhFrame3.jpg",
+
+            img19: "/images/shows/Mike2.jpg",
+            img20: "/images/shows/Phil2.jpg",
+            img21: "images/shows/Phil3.jpg",
+
+            img22: "/images/shows/halloween4.jpg",
+            img23: "/images/shows/halloween5.jpg",
+            img24: "images/shows/halloween6.jpg",
+
+            img25: "/images/shows/Trio1.jpg",
+            img26: "/images/shows/Trio2.jpg",
+            img27: "images/shows/Trio3.jpg",
+
+            img28: "/images/shows/EleventhFrame1.jpg",
+            img29: "/images/shows/Phil1.jpg",
+            img30: "images/shows/TheBurl1.jpg",
+
+            img31: "/images/shows/halloween1.jpg",
+            img32: "/images/shows/halloween2.jpg",
+            img33: "images/shows/halloween3.jpg"
         };
     }
 });
@@ -43473,6 +43621,42 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
+    _c(
+      "button",
+      {
+        on: {
+          click: function($event) {
+            _vm.toggleStudioPictures()
+          }
+        }
+      },
+      [_vm._v("Sneak Attack")]
+    ),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        on: {
+          click: function($event) {
+            _vm.toggleShowPictures()
+          }
+        }
+      },
+      [_vm._v("Live Shows")]
+    ),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        on: {
+          click: function($event) {
+            _vm.toggleMiscPictures()
+          }
+        }
+      },
+      [_vm._v("Other")]
+    ),
+    _vm._v(" "),
     _c(
       "div",
       {
@@ -43513,313 +43697,733 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
+    _c(
+      "div",
+      {
+        directives: [
           {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img1)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img1 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img2)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img2 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img3)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img3 }
-            })
-          ]
-        )
-      ])
-    ]),
+            name: "show",
+            rawName: "v-show",
+            value: _vm.showStudioPics,
+            expression: "showStudioPics"
+          }
+        ],
+        staticClass: "studio-container"
+      },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img1)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img1 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img2)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img2 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img3)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img3 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img4)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img4 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img5)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img5 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img6)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img6 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img7)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img7 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "http://sneakattackrecording.com/",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img8 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img9)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img9 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img10)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img10 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img11)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img11 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img12)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img12 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img13)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img13 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img14)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img14 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img15)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal thumbnails",
+                  attrs: { src: _vm.img15 }
+                })
+              ]
+            )
+          ])
+        ])
+      ]
+    ),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
+    _c(
+      "div",
+      {
+        directives: [
           {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img4)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img4 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img5)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img5 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img6)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img6 }
-            })
-          ]
-        )
-      ])
-    ]),
+            name: "show",
+            rawName: "v-show",
+            value: _vm.showShowPics,
+            expression: "showShowPics"
+          }
+        ],
+        staticClass: "live-show-container"
+      },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img16)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img16 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img17)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img17 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img18)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img18 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img19)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img19 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img20)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img20 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img21)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img21 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img22)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img22 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img23)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img23 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img24)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img24 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img25)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img25 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img26)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img26 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img27)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img27 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img28)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img28 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img29)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img29 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img30)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img30 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img31)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img31 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img32)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img32 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img33)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img33 }
+                })
+              ]
+            )
+          ])
+        ])
+      ]
+    ),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
+    _c(
+      "div",
+      {
+        directives: [
           {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img7)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img7 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: {
-              href: "http://sneakattackrecording.com/",
-              target: "_blank"
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img8 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img9)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img9 }
-            })
-          ]
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img10)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img10 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img11)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img11 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img12)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img12 }
-            })
-          ]
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img13)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img13 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img14)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img14 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img15)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal thumbnails",
-              attrs: { src: _vm.img15 }
-            })
-          ]
-        )
-      ])
-    ])
+            name: "show",
+            rawName: "v-show",
+            value: _vm.showMiscPics,
+            expression: "showMiscPics"
+          }
+        ],
+        staticClass: "Misc-container"
+      },
+      [_c("h1", [_vm._v("SHIT")])]
+    )
   ])
 }
 var staticRenderFns = [

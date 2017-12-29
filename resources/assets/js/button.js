@@ -1,0 +1,3 @@
+function togglePicturesPage{
+	alert('hey');
+}

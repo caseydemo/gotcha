@@ -11,13 +11,10 @@ Venue-Hunter
 		GOTCHA
 	</div> -->
 </div>
-
 <div class="container">
 <example></example>
 </div>
 
-
-    <!-- <script src="{{ asset('js/embed.js') }}"></script> -->
 @endsection
 
 
