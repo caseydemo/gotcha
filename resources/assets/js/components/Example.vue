@@ -1,8 +1,17 @@
 <template>
 <div class="container">
-  <button v-on:click="toggleStudioPictures()">Sneak Attack</button>
-  <button v-on:click="toggleShowPictures()">Live Shows</button>
-  <button v-on:click="toggleMiscPictures()">Other</button>
+  <div class="row">
+    <div class="col">
+      <button class="toggle-button" v-on:click="toggleStudioPictures()">Sneak Attack</button>
+    </div>
+    <div class="col">
+      <button class="toggle-button" v-on:click="toggleShowPictures()">Live Shows</button>      
+    </div>
+    <div class="col">
+      <button class="toggle-button" v-on:click="toggleMiscPictures()">Other</button>
+    </div>
+  </div>
+
 
   <!-- Modal -->
   <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalTitle" aria-hidden="true">
@@ -385,5 +394,10 @@ data () {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
+}
+.toggle-button{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Metal Mania', cursive;
 }
 </style>

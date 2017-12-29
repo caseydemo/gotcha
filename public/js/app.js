@@ -42802,7 +42802,7 @@ exports = module.exports = __webpack_require__(41)(undefined);
 
 
 // module
-exports.push([module.i, "\n.thumbnails[data-v-650f2efa]{\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n}\n.show-thumbnails[data-v-650f2efa]{\n    cursor: pointer;\n    height: auto; \n    width: auto; \n    max-width: 300px; \n    max-height: 300px;\n    padding-bottom: 10px;\n}\n.col[data-v-650f2efa]{\n  margin:auto;\n  text-align: center;\n}\n.modal-img[data-v-650f2efa]{\n  width: 100%;\n  margin:auto;\n}\n.modal-title[data-v-650f2efa]{\n  width: 100%;\n  text-align: center;\n  font-size: 30px;\n  font-weight: bold;\n}\n", ""]);
+exports.push([module.i, "\n.thumbnails[data-v-650f2efa]{\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n}\n.show-thumbnails[data-v-650f2efa]{\n    cursor: pointer;\n    height: auto; \n    width: auto; \n    max-width: 300px; \n    max-height: 300px;\n    padding-bottom: 10px;\n}\n.col[data-v-650f2efa]{\n  margin:auto;\n  text-align: center;\n}\n.modal-img[data-v-650f2efa]{\n  width: 100%;\n  margin:auto;\n}\n.modal-title[data-v-650f2efa]{\n  width: 100%;\n  text-align: center;\n  font-size: 30px;\n  font-weight: bold;\n}\n.toggle-button[data-v-650f2efa]{\n  font-size: 30px;\n  font-weight: bolder;\n  font-family: 'Metal Mania', cursive;\n}\n", ""]);
 
 // exports
 
@@ -43512,6 +43512,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -43621,41 +43630,52 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c(
-      "button",
-      {
-        on: {
-          click: function($event) {
-            _vm.toggleStudioPictures()
-          }
-        }
-      },
-      [_vm._v("Sneak Attack")]
-    ),
-    _vm._v(" "),
-    _c(
-      "button",
-      {
-        on: {
-          click: function($event) {
-            _vm.toggleShowPictures()
-          }
-        }
-      },
-      [_vm._v("Live Shows")]
-    ),
-    _vm._v(" "),
-    _c(
-      "button",
-      {
-        on: {
-          click: function($event) {
-            _vm.toggleMiscPictures()
-          }
-        }
-      },
-      [_vm._v("Other")]
-    ),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "button",
+          {
+            staticClass: "toggle-button",
+            on: {
+              click: function($event) {
+                _vm.toggleStudioPictures()
+              }
+            }
+          },
+          [_vm._v("Sneak Attack")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "button",
+          {
+            staticClass: "toggle-button",
+            on: {
+              click: function($event) {
+                _vm.toggleShowPictures()
+              }
+            }
+          },
+          [_vm._v("Live Shows")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "button",
+          {
+            staticClass: "toggle-button",
+            on: {
+              click: function($event) {
+                _vm.toggleMiscPictures()
+              }
+            }
+          },
+          [_vm._v("Other")]
+        )
+      ])
+    ]),
     _vm._v(" "),
     _c(
       "div",
