@@ -1,29 +1,28 @@
 <template>
   <div class="sneak-attack">
 
-
-<!-- Modal -->
-<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalTitle" aria-hidden="true">
-  <div style="margin:auto; margin-top:200px;" class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <!-- <h5 class="modal-title" id="exampleModalLongTitle">{{ modal_title }}</h5> -->
-        <button class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <img class="modal-img" :src="modal_img" />
+  <!-- Modal -->
+  <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalTitle" aria-hidden="true">
+    <div style="margin:auto; margin-top:200px;" class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLongTitle">{{ modal_title }}</h5> -->
+          <button class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button Save changes</button>
+        <div class="modal-body">
+          <div class="container">
+            <img class="modal-img" :src="modal_img" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- ROW -->
   <div class="row">
@@ -127,7 +126,7 @@
 <script>
 export default {
 
-    'sneak-attack': 'sneak-attack',
+    sneak-attack: 'sneak-attack',
     mounted() {
         console.log('Component mounted.')
     },

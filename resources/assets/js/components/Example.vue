@@ -1,14 +1,14 @@
 <template>
 <div class="container">
-  <div class="row">
+  <div style="padding:10px;" class="row">
     <div class="col">
-      <button class="toggle-button" v-on:click="toggleStudioPictures()">Sneak Attack</button>
+      <button class="toggle-button hvr-bounce-in" v-on:click="toggleStudioPictures()">Sneak Attack</button>
     </div>
     <div class="col">
-      <button class="toggle-button" v-on:click="toggleShowPictures()">Live Shows</button>      
+      <button class="toggle-button hvr-bounce-in" v-on:click="toggleShowPictures()">Live Shows</button>      
     </div>
     <div class="col">
-      <button class="toggle-button" v-on:click="toggleMiscPictures()">Other</button>
+      <button class="toggle-button hvr-bounce-in" v-on:click="toggleMiscPictures()">Other</button>
     </div>
   </div>
 
@@ -399,5 +399,11 @@ data () {
   font-size: 30px;
   font-weight: bolder;
   font-family: 'Metal Mania', cursive;
+  border-style: solid white;
+  /*background: url(/public/dark-brushed-bg.jpg);*/
+}
+.toggle-button:hover{
+  color:white;
+  background: gray;
 }
 </style>

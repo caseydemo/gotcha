@@ -35,7 +35,7 @@
         <a class="nav-link hvr-grow" href="/pictures">Photos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link hvr-grow" href="#">Videos</a>
+        <a class="nav-link hvr-grow" href="/video">Videos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link hvr-grow" href="#">Audio</a>
