@@ -5,4 +5,6 @@ Videos Page
 @endsection
 
 @section('content')
+<videos></videos>
 @endsection
+

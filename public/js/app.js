@@ -1097,7 +1097,7 @@ window.Vue = __webpack_require__(36);
  */
 
 Vue.component('example', __webpack_require__(39));
-Vue.component('test', __webpack_require__(47));
+Vue.component('videos', __webpack_require__(62));
 
 var app = new Vue({
   el: '#app'
@@ -44489,20 +44489,45 @@ if (false) {
 }
 
 /***/ }),
-/* 47 */
+/* 47 */,
+/* 48 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(63)
+}
 var normalizeComponent = __webpack_require__(9)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(65)
 /* template */
-var __vue_template__ = null
+var __vue_template__ = __webpack_require__(66)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-47d0a44f"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -44513,16 +44538,519 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/Test.vue"
+Component.options.__file = "resources/assets/js/components/Videos.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-47d0a44f", Component.options)
+  } else {
+    hotAPI.reload("data-v-47d0a44f", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
 
 module.exports = Component.exports
 
 
 /***/ }),
-/* 48 */
-/***/ (function(module, exports) {
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(64);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(43)("3ca13005", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-47d0a44f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Videos.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-47d0a44f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Videos.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(42)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.thumbnails[data-v-47d0a44f]{\n  width: 100%;\n  height: auto;\n  cursor: pointer;\n}\n.show-thumbnails[data-v-47d0a44f]{\n    cursor: pointer;\n    height: auto; \n    width: auto; \n    max-width: 300px; \n    max-height: 300px;\n    padding-bottom: 10px;\n}\n.col[data-v-47d0a44f]{\n  margin:auto;\n  text-align: center;\n}\n.modal-img[data-v-47d0a44f]{\n  width: 100%;\n  margin:auto;\n}\n.modal-title[data-v-47d0a44f]{\n  width: 100%;\n  text-align: center;\n  font-size: 30px;\n  font-weight: bold;\n}\n.toggle-button[data-v-47d0a44f]{\n  font-size: 30px;\n  font-weight: bolder;\n  font-family: 'Metal Mania', cursive;\n  border-style: solid white;\n  /*background: url(/public/dark-brushed-bg.jpg);*/\n}\n.toggle-button[data-v-47d0a44f]:hover{\n  color:white;\n  background: gray;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    mounted: function mounted() {
+        console.log('Component mounted.');
+    },
+
+
+    methods: {
+
+        toggleStudioPictures: function toggleStudioPictures() {
+            this.showStudioPics = true, this.showShowPics = false, this.showMiscPics = false;
+        },
+        toggleShowPictures: function toggleShowPictures() {
+            this.showStudioPics = false, this.showShowPics = true, this.showMiscPics = false;
+        },
+        toggleMiscPictures: function toggleMiscPictures() {
+            this.showStudioPics = false, this.showShowPics = false, this.showMiscPics = true;
+        },
+        modalCall: function modalCall(thing) {
+            console.log(thing);
+            this.modal_vid = thing;
+            // console.log(this.modal_info[id]['image']);
+            // this.modal_img=this.modal_info[id]['image'];
+            // this.modal_title=this.modal_info[id]['title'];
+            // console.log(this.modal_info[0]['title']);
+        }
+    },
+    data: function data() {
+        return {
+            showStudioPics: true,
+            showShowPics: false,
+            showMiscPics: false,
+
+            modal_vid: '',
+            modal_title: '',
+
+            vid1: "https://www.youtube.com/embed/PZgaPhr5zkI?rel=0",
+            vid2: "https://www.youtube.com/embed/Mv692VjCAgY?rel=0",
+            vid3: "https://www.youtube.com/embed/ZHCrIHylTQo?rel=0",
+            vid4: "https://www.youtube.com/embed/x7IPQnvbhGM?rel=0",
+
+            // STUDIO PICS
+            img1: "/images/studio/GroupPhoto1.jpg",
+            img2: "/images/studio/ShuffleWarehouse2.jpg",
+            img3: "images/studio/ShuffleWarehouse3.jpg",
+
+            img4: "/images/studio/GriffyStudio1.jpg",
+            img5: "/images/studio/GriffyStudio2.jpg",
+            img6: "images/studio/GriffyStudio3.jpg",
+
+            img7: "/images/studio/MikeStudio1.jpg",
+            img8: "http://static1.squarespace.com/static/51f86a82e4b0b49df4c3d14b/t/51fb146be4b0a2a178e9c0f6/1505940236762/?format=1500w",
+            img9: "images/studio/MikeStudio2.jpg",
+
+            img10: "/images/studio/PhilStudio1.jpg",
+            img11: "/images/studio/PhilStudio2.jpg",
+            img12: "images/studio/PhilStudio3.jpg",
+
+            img13: "/images/studio/CaseyStudio1.jpg",
+            img14: "/images/studio/CaseyStudio2.jpg",
+            img15: "images/studio/CaseyStudio3.jpg",
+
+            // SHOW PICS
+            img16: "/images/shows/EleventhFrame2.jpg",
+            img17: "/images/shows/Mike1.jpg",
+            img18: "images/shows/EleventhFrame3.jpg",
+
+            img19: "/images/shows/Mike2.jpg",
+            img20: "/images/shows/Phil2.jpg",
+            img21: "images/shows/Phil3.jpg",
+
+            img22: "/images/shows/halloween4.jpg",
+            img23: "/images/shows/halloween5.jpg",
+            img24: "images/shows/halloween6.jpg",
+
+            img25: "/images/shows/Trio1.jpg",
+            img26: "/images/shows/Trio2.jpg",
+            img27: "images/shows/Trio3.jpg",
+
+            img28: "/images/shows/EleventhFrame1.jpg",
+            img29: "/images/shows/Phil1.jpg",
+            img30: "images/shows/TheBurl1.jpg",
+
+            img31: "/images/shows/halloween1.jpg",
+            img32: "/images/shows/halloween2.jpg",
+            img33: "images/shows/halloween3.jpg"
+        };
+    }
+});
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "container", staticStyle: { "text-align": "center" } },
+    [
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "videoModal",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "videoModalTitle",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "modal-dialog modal-lg",
+              staticStyle: { margin: "auto", "margin-top": "200px" },
+              attrs: { role: "document" }
+            },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("iframe", {
+                    attrs: {
+                      width: "560",
+                      height: "315",
+                      src: _vm.modal_vid,
+                      frameborder: "0",
+                      gesture: "media",
+                      allow: "encrypted-media",
+                      allowfullscreen: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _vm._m(1)
+              ])
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-6" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("h5", { staticClass: "card-title" }, [
+                _vm._v("Eleventh Frame Set 1")
+              ]),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "card-img-top",
+                attrs: {
+                  src: "/images/studio/GroupPhoto1.jpg",
+                  alt: "Card image cap"
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: {
+                      "data-toggle": "modal",
+                      "data-target": "#videoModal"
+                    },
+                    on: {
+                      click: function($event) {
+                        _vm.modalCall(_vm.vid1)
+                      }
+                    }
+                  },
+                  [_vm._v("Watch Clip")]
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-sm-6" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("h5", { staticClass: "card-title" }, [
+                _vm._v("The Eleventh Frame Set 2")
+              ]),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "card-img-top",
+                attrs: {
+                  src: "/images/studio/GroupPhoto1.jpg",
+                  alt: "Card image cap"
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: {
+                      "data-toggle": "modal",
+                      "data-target": "#videoModal"
+                    },
+                    on: {
+                      click: function($event) {
+                        _vm.modalCall(_vm.vid2)
+                      }
+                    }
+                  },
+                  [_vm._v("Go somewhere")]
+                )
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-6" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("h5", { staticClass: "card-title" }, [
+                _vm._v("The Brick Alley")
+              ]),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "card-img-top",
+                attrs: {
+                  src: "/images/studio/GroupPhoto1.jpg",
+                  alt: "Card image cap"
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: {
+                      "data-toggle": "modal",
+                      "data-target": "#videoModal"
+                    },
+                    on: {
+                      click: function($event) {
+                        _vm.modalCall(_vm.vid3)
+                      }
+                    }
+                  },
+                  [_vm._v("Brick Alley")]
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-sm-6" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("h5", { staticClass: "card-title" }, [
+                _vm._v("The Brick Alley")
+              ]),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "card-img-top",
+                attrs: {
+                  src: "/images/studio/GroupPhoto1.jpg",
+                  alt: "Card image cap"
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: {
+                      "data-toggle": "modal",
+                      "data-target": "#videoModal"
+                    },
+                    on: {
+                      click: function($event) {
+                        _vm.modalCall(_vm.vid4)
+                      }
+                    }
+                  },
+                  [_vm._v("Brick Alley")]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c(
+        "h5",
+        { staticClass: "modal-title", attrs: { id: "exampleModalLongTitle" } },
+        [_vm._v("Modal title")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-secondary",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("Close")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "button" } },
+        [_vm._v("Save changes")]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-47d0a44f", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
