@@ -23,4 +23,8 @@ Route::get('/video', function(){
 	return view('video');
 });
 
+Route::get('/schedule', function(){
+	return view('schedule');
+});
+
 Route::resource('/home' , 'GotchaController');

@@ -17,6 +17,7 @@ window.Vue = require('vue');
 
 Vue.component('example', require('./components/Example.vue'));
 Vue.component('videos', require('./components/Videos.vue'));
+Vue.component('schedule', require('./components/Schedule.vue'));
 
 
 const app = new Vue({
