@@ -7,7 +7,7 @@
   <div style="margin:auto; margin-top:200px;" class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">{{ modal_title }}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -29,8 +29,8 @@
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Eleventh Frame Set 1</h5>
-          <img class="card-img-top" src="/images/studio/GroupPhoto1.jpg" alt="Card image cap">
+          <h5 class="card-title">Shuffle The Deck</h5>
+          <img class="card-img-top" src="/images/misc/Bridge1.jpg" alt="Card image cap">
         <div class="card-body">
             <a v-on:click="modalCall(vid1)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Watch Clip</a>
         </div>
@@ -41,10 +41,10 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">The Eleventh Frame Set 2</h5>
-        <img class="card-img-top" src="/images/studio/GroupPhoto1.jpg" alt="Card image cap">
+        <h5 class="card-title">Square Hammer</h5>
+        <img class="card-img-top" src="/images/misc/Bridge1.jpg" alt="Card image cap">
         <div class="card-body">
-          <a v-on:click="modalCall(vid2)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Go somewhere</a>
+          <a v-on:click="modalCall(vid2)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Watch Clip</a>
         </div>
       </div>
     </div>
@@ -112,12 +112,27 @@ methods: {
         this.showMiscPics = true
     },
     modalCall: function(thing){
-      console.log(thing);
+        // determine the modal video
         this.modal_vid = thing;
-        // console.log(this.modal_info[id]['image']);
-        // this.modal_img=this.modal_info[id]['image'];
-        // this.modal_title=this.modal_info[id]['title'];
-        // console.log(this.modal_info[0]['title']);
+
+        // determine the video title
+        switch(thing) {
+            case this.vid1:
+                this.modal_title = "Shuffle The Deck";
+                break;
+            case this.vid2:
+                this.modal_title = "Square Hammer";
+                break;
+            case this.vid3:
+                this.modal_title = "We Die Young";
+                break;
+            case this.vid4:
+                this.modal_title = "Fourth Video";
+                break;            
+            default:
+                // code block
+        }
+
     }
 },    
 data () {
@@ -129,11 +144,11 @@ data () {
         modal_vid: '',
         modal_title: '',
 
-        vid1: "https://www.youtube.com/embed/PZgaPhr5zkI?rel=0",
-        vid2: "https://www.youtube.com/embed/Mv692VjCAgY?rel=0",
-        vid3: "https://www.youtube.com/embed/ZHCrIHylTQo?rel=0",
+        vid1: "https://www.youtube.com/embed/6rTVdLVWSX8?rel=0", // Shuffle The Deck
+        vid2: "https://www.youtube.com/embed/Mz9oltazx3I?rel=0", // Square Hammer
+        vid3: "https://www.youtube.com/embed/susCmBkVesw?rel=0", // We Die Young
         vid4: "https://www.youtube.com/embed/x7IPQnvbhGM?rel=0",
-        
+        // Square Hammer: https://www.youtube.com/embed/Mz9oltazx3I?rel=0
 
         // STUDIO PICS
         img1: "/images/studio/GroupPhoto1.jpg",
