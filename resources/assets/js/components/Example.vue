@@ -255,7 +255,43 @@
 
   <!-- MISC PICTURES -->
   <div v-show="showMiscPics" class="Misc-container">
-    <h1>SHIT</h1>
+        <!-- MISC Row -->
+    <div class="row">
+      <div class="col">
+        <a v-on:click="modalCall(img34)" data-toggle="modal" data-target="#imgModal">
+          <img class="hvr-wobble-horizontal show-thumbnails" :src="img34" >
+        </a>
+      </div>
+      <div class="col">
+        <a v-on:click="modalCall(img35)" data-toggle="modal" data-target="#imgModal">
+          <img class="hvr-wobble-horizontal show-thumbnails" :src="img35" >
+        </a>
+      </div>
+      <div class="col">
+        <a v-on:click="modalCall(img36)" data-toggle="modal" data-target="#imgModal">
+          <img class="hvr-wobble-horizontal show-thumbnails" :src="img36" >
+        </a>
+      </div>
+    </div>  
+
+        <!-- MISC Row -->
+    <div class="row">
+      <div class="col">
+        <a v-on:click="modalCall(img37)" data-toggle="modal" data-target="#imgModal">
+          <img class="hvr-wobble-horizontal show-thumbnails" :src="img37" >
+        </a>
+      </div>
+      <div class="col">
+        <a v-on:click="modalCall(img38)" data-toggle="modal" data-target="#imgModal">
+          <img style="transform: rotate(90deg);" class="hvr-wobble-horizontal-90deg show-thumbnails" :src="img38" >
+        </a>
+      </div>
+      <div class="col">
+        <a v-on:click="modalCall(img33)" data-toggle="modal" data-target="#imgModal">
+          <img class="hvr-wobble-horizontal show-thumbnails" :src="img33" >
+        </a>
+      </div>
+    </div>  
   </div>
 
   </div>
@@ -362,7 +398,14 @@ data () {
 
         img31: "/images/shows/halloween1.jpg",
         img32: "/images/shows/halloween2.jpg",
-        img33: "images/shows/halloween3.jpg"
+        img33: "images/shows/halloween3.jpg",
+
+        img34: "/images/misc/casey-live.png", // casey close up
+        img35: "/images/misc/dancin-baby.PNG",
+        img36: "/images/misc/mike-fog.JPG",
+
+        img37: "/images/misc/June17Poster.jpg", 
+        img38: "/images/misc/phil-and-casey.jpeg",
     }
     }
 }

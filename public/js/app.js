@@ -43523,6 +43523,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -43618,7 +43654,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             img31: "/images/shows/halloween1.jpg",
             img32: "/images/shows/halloween2.jpg",
-            img33: "images/shows/halloween3.jpg"
+            img33: "images/shows/halloween3.jpg",
+
+            img34: "/images/misc/casey-live.png", // casey close up
+            img35: "/images/misc/dancin-baby.PNG",
+            img36: "/images/misc/mike-fog.JPG",
+
+            img37: "/images/misc/June17Poster.jpg",
+            img38: "/images/misc/phil-and-casey.jpeg"
         };
     }
 });
@@ -44444,7 +44487,132 @@ var render = function() {
         ],
         staticClass: "Misc-container"
       },
-      [_c("h1", [_vm._v("SHIT")])]
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img34)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img34 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img35)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img35 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img36)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img36 }
+                })
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img37)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img37 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img38)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal-90deg show-thumbnails",
+                  staticStyle: { transform: "rotate(90deg)" },
+                  attrs: { src: _vm.img38 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img33)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img33 }
+                })
+              ]
+            )
+          ])
+        ])
+      ]
     )
   ])
 }
@@ -45243,7 +45411,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("tbody", [
           _c("tr", [
-            _c("td", [_vm._v("Jan ?")]),
+            _c("td", [_vm._v("Jan 17")]),
             _vm._v(" "),
             _c("td", [_vm._v("Lexington, KY")]),
             _vm._v(" "),

@@ -640,7 +640,27 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
 }
+.hvr-wobble-horizontal-90deg {
+  transform: rotate(90deg)
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
 .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+  -webkit-animation-name: hvr-wobble-horizontal;
+  animation-name: hvr-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.hvr-wobble-horizontal-90deg:hover, .hvr-wobble-horizontal-90deg:focus, .hvr-wobble-horizontal-90deg:active {
+  transform: rotate(90deg)
   -webkit-animation-name: hvr-wobble-horizontal;
   animation-name: hvr-wobble-horizontal;
   -webkit-animation-duration: 1s;

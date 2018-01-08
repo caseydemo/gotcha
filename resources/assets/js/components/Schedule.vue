@@ -12,7 +12,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>Jan ?</td>
+      <td>Jan 17</td>
       <td>Lexington, KY</td>
       <td>Manchester Music Hall</td>
       <td>Opening for Saving Able</td>
