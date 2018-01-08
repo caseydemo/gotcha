@@ -43702,7 +43702,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             img36: "/images/misc/mike-fog.JPG",
 
             img37: "/images/misc/June17Poster.jpg",
-            img38: "/images/misc/phil-and-casey.jpeg"
+            img38: "/images/misc/phil-and-casey.jpeg",
+            img39: "/images/misc/phil-live1.png"
         };
     }
 });
@@ -44640,14 +44641,14 @@ var render = function() {
                 attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
                 on: {
                   click: function($event) {
-                    _vm.modalCall(_vm.img33)
+                    _vm.modalCall(_vm.img39)
                   }
                 }
               },
               [
                 _c("img", {
                   staticClass: "hvr-wobble-horizontal show-thumbnails",
-                  attrs: { src: _vm.img33 }
+                  attrs: { src: _vm.img39 }
                 })
               ]
             )

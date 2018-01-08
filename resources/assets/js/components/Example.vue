@@ -287,8 +287,8 @@
         </a>
       </div>
       <div class="col">
-        <a v-on:click="modalCall(img33)" data-toggle="modal" data-target="#imgModal">
-          <img class="hvr-wobble-horizontal show-thumbnails" :src="img33" >
+        <a v-on:click="modalCall(img39)" data-toggle="modal" data-target="#imgModal">
+          <img class="hvr-wobble-horizontal show-thumbnails" :src="img39" >
         </a>
       </div>
     </div>  
@@ -406,6 +406,7 @@ data () {
 
         img37: "/images/misc/June17Poster.jpg", 
         img38: "/images/misc/phil-and-casey.jpeg",
+        img39: "/images/misc/phil-live1.png",
     }
     }
 }
