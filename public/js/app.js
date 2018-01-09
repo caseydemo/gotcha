@@ -43600,6 +43600,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -43703,7 +43724,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             img37: "/images/misc/June17Poster.jpg",
             img38: "/images/misc/phil-and-casey.jpeg",
-            img39: "/images/misc/phil-live1.png"
+            img39: "/images/misc/phil-live1.png",
+
+            img40: "/images/misc/poster-halloween-2017.JPG",
+            img41: "/images/misc/poster-toledo-2017.jpg",
+            img42: "/images/misc/poster-april-fools-2017.jpg"
         };
     }
 });
@@ -44626,8 +44651,7 @@ var render = function() {
               },
               [
                 _c("img", {
-                  staticClass: "hvr-wobble-horizontal-90deg show-thumbnails",
-                  staticStyle: { transform: "rotate(90deg)" },
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
                   attrs: { src: _vm.img38 }
                 })
               ]
@@ -44655,7 +44679,69 @@ var render = function() {
           ])
         ])
       ]
-    )
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img40)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal show-thumbnails",
+              attrs: { src: _vm.img40 }
+            })
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img41)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal show-thumbnails",
+              attrs: { src: _vm.img41 }
+            })
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "a",
+          {
+            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+            on: {
+              click: function($event) {
+                _vm.modalCall(_vm.img42)
+              }
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "hvr-wobble-horizontal show-thumbnails",
+              attrs: { src: _vm.img42 }
+            })
+          ]
+        )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -45397,6 +45483,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -45436,7 +45523,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
-      _c("table", { staticClass: "table" }, [
+      _c("div", { staticClass: "p-5" }),
+      _vm._v(" "),
+      _c("table", { staticClass: "table mt-5" }, [
         _c("thead", [
           _c("tr", [
             _c("th", [_vm._v("Date")]),
@@ -45453,39 +45542,72 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("tbody", [
           _c("tr", [
-            _c("td", [_vm._v("Jan 17")]),
+            _c("td", [_vm._v("Jan 17, 2018")]),
             _vm._v(" "),
             _c("td", [_vm._v("Lexington, KY")]),
             _vm._v(" "),
             _c("td", [_vm._v("Manchester Music Hall")]),
             _vm._v(" "),
-            _c("td", [_vm._v("Opening for Saving Able")]),
+            _c("td", [_vm._v("Opening for Saving Abel")]),
             _vm._v(" "),
-            _c("td", [_vm._v("#")])
+            _c("td", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://detroit.carpediem.cd/events/3819634-dirkschneider-at-the-token-lounge/"
+                  }
+                },
+                [_vm._v("website")]
+              )
+            ])
           ]),
           _vm._v(" "),
           _c("tr", [
-            _c("td", [_vm._v("Jan ?")]),
+            _c("td", [_vm._v("March 6, 2018")]),
             _vm._v(" "),
-            _c("td", [_vm._v("Lexington, KY")]),
+            _c("td", [_vm._v("Detroit, MI")]),
             _vm._v(" "),
-            _c("td", [_vm._v("Manchester Music Hall")]),
+            _c("td", [_vm._v("The Token Lounge")]),
             _vm._v(" "),
-            _c("td", [_vm._v("Opening for Saving Able")]),
+            _c("td", [_vm._v("Opening for Udo Dirkschneider")]),
             _vm._v(" "),
-            _c("td", [_vm._v("#")])
+            _c("td", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "https://www.ticketfly.com/event/1602236-saving-abel-lexington/"
+                  }
+                },
+                [_vm._v("website")]
+              )
+            ])
           ]),
           _vm._v(" "),
           _c("tr", [
-            _c("td", [_vm._v("Jan ?")]),
+            _c("td", [_vm._v("April 3, 2018")]),
             _vm._v(" "),
-            _c("td", [_vm._v("Lexington, KY")]),
+            _c("td", [_vm._v("Louisville, KY")]),
             _vm._v(" "),
-            _c("td", [_vm._v("Manchester Music Hall")]),
+            _c("td", [_vm._v("Trixies Entertainment Complex")]),
             _vm._v(" "),
-            _c("td", [_vm._v("Opening for Saving Able")]),
+            _c("td", [_vm._v("Opening for Udo Dirkschneider")]),
             _vm._v(" "),
-            _c("td", [_vm._v("#")])
+            _c("td", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://louisville.carpediem.cd/events/4000865-udo-dirkschneider-elm-street-at-trixies-entertainment-complex/"
+                  }
+                },
+                [_vm._v("website")]
+              )
+            ])
           ])
         ])
       ])

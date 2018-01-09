@@ -283,7 +283,7 @@
       </div>
       <div class="col">
         <a v-on:click="modalCall(img38)" data-toggle="modal" data-target="#imgModal">
-          <img style="transform: rotate(90deg);" class="hvr-wobble-horizontal-90deg show-thumbnails" :src="img38" >
+          <img  class="hvr-wobble-horizontal show-thumbnails" :src="img38" >
         </a>
       </div>
       <div class="col">
@@ -293,6 +293,27 @@
       </div>
     </div>  
   </div>
+
+          <!-- MISC Row -->
+    <div class="row">
+      <div class="col">
+        <a v-on:click="modalCall(img40)" data-toggle="modal" data-target="#imgModal">
+          <img class="hvr-wobble-horizontal show-thumbnails" :src="img40" >
+        </a>
+      </div>
+      <div class="col">
+        <a v-on:click="modalCall(img41)" data-toggle="modal" data-target="#imgModal">
+          <img  class="hvr-wobble-horizontal show-thumbnails" :src="img41" >
+        </a>
+      </div>
+      <div class="col">
+        <a v-on:click="modalCall(img42)" data-toggle="modal" data-target="#imgModal">
+          <img class="hvr-wobble-horizontal show-thumbnails" :src="img42" >
+        </a>
+      </div>
+    </div>  
+  </div>
+
 
   </div>
 </template>
@@ -407,6 +428,10 @@ data () {
         img37: "/images/misc/June17Poster.jpg", 
         img38: "/images/misc/phil-and-casey.jpeg",
         img39: "/images/misc/phil-live1.png",
+
+        img40: "/images/misc/poster-halloween-2017.JPG",
+        img41: "/images/misc/poster-toledo-2017.jpg",
+        img42: "/images/misc/poster-april-fools-2017.jpg",
     }
     }
 }
