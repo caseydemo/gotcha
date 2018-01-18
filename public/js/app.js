@@ -43621,6 +43621,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -44681,67 +44683,83 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
+    _c(
+      "div",
+      {
+        directives: [
           {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img40)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal show-thumbnails",
-              attrs: { src: _vm.img40 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img41)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal show-thumbnails",
-              attrs: { src: _vm.img41 }
-            })
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "a",
-          {
-            attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
-            on: {
-              click: function($event) {
-                _vm.modalCall(_vm.img42)
-              }
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "hvr-wobble-horizontal show-thumbnails",
-              attrs: { src: _vm.img42 }
-            })
-          ]
-        )
-      ])
-    ])
+            name: "show",
+            rawName: "v-show",
+            value: _vm.showMiscPics,
+            expression: "showMiscPics"
+          }
+        ],
+        staticClass: "Misc-container"
+      },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img40)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img40 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img41)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img41 }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c(
+              "a",
+              {
+                attrs: { "data-toggle": "modal", "data-target": "#imgModal" },
+                on: {
+                  click: function($event) {
+                    _vm.modalCall(_vm.img42)
+                  }
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "hvr-wobble-horizontal show-thumbnails",
+                  attrs: { src: _vm.img42 }
+                })
+              ]
+            )
+          ])
+        ])
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -44882,11 +44900,6 @@ exports.push([module.i, "\n.thumbnails[data-v-47d0a44f]{\n  width: 100%;\n  heig
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
 //
 //
 //
@@ -45152,14 +45165,6 @@ var render = function() {
                 _vm._v("Shuffle The Deck")
               ]),
               _vm._v(" "),
-              _c("img", {
-                staticClass: "card-img-top",
-                attrs: {
-                  src: "/images/misc/Bridge1.jpg",
-                  alt: "Card image cap"
-                }
-              }),
-              _vm._v(" "),
               _c("div", { staticClass: "card-body" }, [
                 _c(
                   "a",
@@ -45189,14 +45194,6 @@ var render = function() {
                 _vm._v("Square Hammer")
               ]),
               _vm._v(" "),
-              _c("img", {
-                staticClass: "card-img-top",
-                attrs: {
-                  src: "/images/misc/Bridge1.jpg",
-                  alt: "Card image cap"
-                }
-              }),
-              _vm._v(" "),
               _c("div", { staticClass: "card-body" }, [
                 _c(
                   "a",
@@ -45224,17 +45221,7 @@ var render = function() {
         _c("div", { staticClass: "col-sm-6" }, [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-body" }, [
-              _c("h5", { staticClass: "card-title" }, [
-                _vm._v("The Brick Alley")
-              ]),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "card-img-top",
-                attrs: {
-                  src: "/images/studio/GroupPhoto1.jpg",
-                  alt: "Card image cap"
-                }
-              }),
+              _c("h5", { staticClass: "card-title" }, [_vm._v("We Die Young")]),
               _vm._v(" "),
               _c("div", { staticClass: "card-body" }, [
                 _c(
@@ -45251,7 +45238,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("Brick Alley")]
+                  [_vm._v("Watch Clip")]
                 )
               ])
             ])
@@ -45261,17 +45248,7 @@ var render = function() {
         _c("div", { staticClass: "col-sm-6" }, [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-body" }, [
-              _c("h5", { staticClass: "card-title" }, [
-                _vm._v("The Brick Alley")
-              ]),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "card-img-top",
-                attrs: {
-                  src: "/images/studio/GroupPhoto1.jpg",
-                  alt: "Card image cap"
-                }
-              }),
+              _c("h5", { staticClass: "card-title" }, [_vm._v("Mob Rules")]),
               _vm._v(" "),
               _c("div", { staticClass: "card-body" }, [
                 _c(
@@ -45288,7 +45265,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("Brick Alley")]
+                  [_vm._v("Watch Clip")]
                 )
               ])
             ])
@@ -45328,12 +45305,6 @@ var staticRenderFns = [
           attrs: { type: "button", "data-dismiss": "modal" }
         },
         [_vm._v("Close")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("Save changes")]
       )
     ])
   }

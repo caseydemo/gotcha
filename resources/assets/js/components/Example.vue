@@ -293,8 +293,8 @@
       </div>
     </div>  
   </div>
-
           <!-- MISC Row -->
+  <div v-show="showMiscPics" class="Misc-container">
     <div class="row">
       <div class="col">
         <a v-on:click="modalCall(img40)" data-toggle="modal" data-target="#imgModal">
@@ -311,7 +311,9 @@
           <img class="hvr-wobble-horizontal show-thumbnails" :src="img42" >
         </a>
       </div>
-    </div>  
+    </div> 
+    </div> 
+
   </div>
 
 

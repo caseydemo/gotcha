@@ -17,7 +17,6 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -30,7 +29,6 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Shuffle The Deck</h5>
-          <img class="card-img-top" src="/images/misc/Bridge1.jpg" alt="Card image cap">
         <div class="card-body">
             <a v-on:click="modalCall(vid1)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Watch Clip</a>
         </div>
@@ -42,7 +40,6 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Square Hammer</h5>
-        <img class="card-img-top" src="/images/misc/Bridge1.jpg" alt="Card image cap">
         <div class="card-body">
           <a v-on:click="modalCall(vid2)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Watch Clip</a>
         </div>
@@ -58,10 +55,9 @@
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">The Brick Alley</h5>
-          <img class="card-img-top" src="/images/studio/GroupPhoto1.jpg" alt="Card image cap">
+          <h5 class="card-title">We Die Young</h5>
           <div class="card-body">
-              <a v-on:click="modalCall(vid3)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Brick Alley</a>
+              <a v-on:click="modalCall(vid3)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Watch Clip</a>
           </div>
         </div>
       </div>
@@ -70,10 +66,9 @@
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">The Brick Alley</h5>
-          <img class="card-img-top" src="/images/studio/GroupPhoto1.jpg" alt="Card image cap">
+          <h5 class="card-title">Mob Rules</h5>
           <div class="card-body">
-              <a v-on:click="modalCall(vid4)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Brick Alley</a>
+              <a v-on:click="modalCall(vid4)" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Watch Clip</a>
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@ nav.navbar.navbar-default.navbar-static-top{
 	margin: auto;
 	font-size: 20px;
 }
-.nav-link{
+.nav-link, .card-title{
 	font-size: 25px;
 	color: #6E6E70;
 	font-family: 'Metal Mania', cursive;

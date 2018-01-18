@@ -41,7 +41,7 @@
         <a class="nav-link hvr-grow" href="/schedule">Schedule</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link hvr-grow" href="#">Merch</a>
+        <!-- <a class="nav-link hvr-grow" href="#">Merch</a> -->
       </li>
     </ul>
 
