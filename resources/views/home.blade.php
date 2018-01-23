@@ -5,6 +5,9 @@ Venue-Hunter
 @endsection
 
 @section('content')
+<head>
+    <meta name="description" content="Original metal band from Lexington, KY." />
+</head>
 
 <div class="title-div">
 	<!-- <div class="slayer-font">
