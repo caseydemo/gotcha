@@ -11,6 +11,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <meta name="description" content="Original metal band from Lexington, KY." />
+
     <title>{{ config('app.name', 'Gotcha') }}</title>
 
     <!-- Styles -->
